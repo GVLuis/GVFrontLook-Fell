@@ -1,0 +1,264 @@
+/* Local CSS Styles */
+/* Alpha Project - Vision Center Version */
+/* Vision Center Color - Primary #000000 | Secundary #ef463c | Coral #ff6f61 | Grey #B7B9BC | White #ffffff */
+
+/* Welcome Page */
+.welcome-container {
+    /* Location of the image */
+    background: url("../../global_assets/images/cover-welcome.jpg");
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based on the container's size */
+    background-size: cover;
+    /* Set a background color that will be displayedwhile the background image is loading */
+    background-color: #000000;
+}
+.welcome-container h1 {
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    font-size: 66px;
+    vertical-align: middle;
+    margin: 35vh 100% 0 0;
+    font-weight: 100;
+    color: #000000;
+    font-kerning: 4;
+}
+/* Sidebar */
+.img-perfil {
+    background: url("../../assets/images/logos/perfil.jpg") no-repeat;
+    display: initial;
+    width: 60%;
+}
+.navigation li.navigation-divider {
+    margin: 10px 0;
+    height: 1px;
+    background-color: rgba(221, 23, 21, .5);
+}
+@media (min-width: 769px) {
+.sidebar-xs .sidebar-main .navigation>li>a>span {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -260px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    padding: 11px 20px;
+    width: 260px;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    }
+}
+/* Navbar */
+.bg-alpha {
+    background-color: #ff6f61;
+}
+.navbar-inverse {
+    z-index: 102;
+    background-color: #ffffff;
+    border-color: #ff6f61;
+    color: #000000;
+    -moz-box-shadow: 0px 4px 5px -2px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 4px 5px -2px rgba(0,0,0,.1);
+    box-shadow: 0px 4px 5px -2px rgba(0,0,0,.1);
+}
+.navbar {
+    min-height: 56px;
+    border-top: 0px;
+    margin-bottom: 0px;
+    border-width: 0px 0px;
+}
+.navbar-brand {
+    padding: 0px 10px;
+}
+.navbar-brand>img {
+    margin-top: 3px;
+    height: 100%;
+}
+.navbar-text {
+    margin: 0;
+    padding: 18px 0px 11px 10px;
+}
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 17px;
+}
+.navbar-nav>.dropdown-user>a, .navbar-nav>.dropdown-user>a>span {
+    padding-top: 9.5px;
+    padding-bottom: 9px;
+}
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-text {
+    color: #000000;
+}
+.label {
+    display: inline-block;
+    font-weight: 500;
+    padding: 2px 5px 1px 5px;
+    line-height: 1.5384616;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .1px;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: #ff6f61;
+}
+.navbar-text img {
+        max-height: 30px;
+        margin-top: -2.5px;
+        border-radius: 50%;
+    }
+
+/* Panels */
+.panel-alpha .panel-heading {
+    border-bottom: 1px solid #dedede;
+}
+
+/* Tables */
+.all-tables thead {
+    color: #ffffff;
+    background-color: #ff6f61;
+}
+
+/* Buttons */
+.border-primary,
+.btn-primary {
+    border-color: #000000 !important;
+}
+.text-primary-800 {
+    color: #000000 !important;
+}
+.btn-primary {
+    background-color: #000000 !important;
+}
+.btn-primary:hover {
+    background-color: #ff6f61 !important;
+}
+.btn-alpha,
+a.btn-alpha {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffffff;
+}
+.btn-alpha:hover, .btn-alpha:active, .btn-alpha:focus,
+a.btn-alpha:hover, a.btn-alpha:active, a.btn-alpha:focus{
+    background-color: #ff6f61 !important;
+    border-color: #ff6f61 !important;
+    color: #ffffff !important;
+}
+
+.btn-alpha-border {
+    border-width: 1.5px;
+    border-color: #000000;
+    color: #000000;
+}
+.btn-alpha-border:hover {
+    border-width: 1.5px;
+    background-color: #ff6f61;
+    border-color: rgba(0, 0, 0, .5);
+    color: #ffffff;
+}
+
+.btn-circle-xs {
+    border-radius: 100% !important;
+    width: 30px;
+    height: 30px;
+}
+.btn-circle-xs>i {
+    left: -3px;
+    top: -3px;
+}
+.btn-circle-xs:visited>i,
+.btn-circle-xs:active>i {
+    color: #ffffff;
+}
+.btn-rounded, .btn-rounded img, .btn-rounded.btn-labeled>b {
+    border-radius: 10px;
+}
+
+/* Paginations */
+/* .pagination>li>a {
+    background-color: transparent;
+} */
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    cursor: default;
+}
+.pagination>li>a:hover {
+    background-color: #fa6e61;
+    border-color: #fa6e61;
+    color: #ffffff;
+}
+/* .pagination.pagination-rounded>li:first-child>a, .pagination.pagination-rounded>li:last-child>a {
+    border: 0px;
+} */
+/* Radio */
+.el-radio > input[type="radio"] + .el-radio-style:after {
+    background: #ff6f61;
+}
+.el-radio > input[type="radio"]:checked + .el-radio-style:before {
+    border: 1px solid #fa6e61;
+}
+.el-radio > input[type="radio"] + .el-radio-style:hover:before, .el-checkbox > input[type="checkbox"] + .el-checkbox-style:hover:before {
+    border-color:  #fa6e61;
+}
+.el-radio > input[type="radio"] + .el-radio-style:before, .el-checkbox > input[type="checkbox"] + .el-checkbox-style:before{
+    border: 1px solid #b1b1b1;
+}
+/* Checkboxs */
+.el-checkbox > input[type="checkbox"]:checked + .el-checkbox-style:before {
+    border: #fa6e61;
+    background: #fa6e61;
+}
+
+/* Calendar */
+.ui-datepicker table td.ui-datepicker-today .ui-state-highlight {
+    background-color: #fa6e61;
+    color: #fff;
+}
+.ui-datepicker table td.ui-datepicker-current-day .ui-state-active {
+    background-color: #adacac;
+    color: #fff;
+}
+/* Forms */
+.el-switch .el-switch-style {
+    background: #d6d6d6;
+    /* background: rgba(255, 111, 97, .5); */
+    /* background: #ffffff;
+    border: 1px solid #ddd; */
+  }
+.el-switch > input[type="checkbox"]:checked + .el-switch-style {
+    background-color: #ff6f61;
+}
+
+/* General */
+.division {
+    border-bottom: 1px solid #ececec;
+    padding: 0px 20px;
+}
+.icon-object.icon-payment {
+    border-radius: 50%;
+    text-align: center;
+    margin: 0px;
+    border-width: 3px;
+    border-style: none;
+    background-color: #fa6e61;
+    padding: 10px;
+    display: inline-block;
+    color: #ffffff;
+}
